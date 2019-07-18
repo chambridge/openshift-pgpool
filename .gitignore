@@ -1,3 +1,8 @@
+env.sh
+kube/pgpool/configs/pgpool.conf
+kube/pgpool/configs/pool_passwd
+kube/pgpool/configs/server.pem
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
