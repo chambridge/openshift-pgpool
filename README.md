@@ -16,7 +16,7 @@ git clone git@github.com:chambridge/openshift-pgpool.git
 cp example.env.sh env.sh
 ```
 
-3. Update the necessary environment variables, `GOPATH`, `CCP_NAMESPACE`. The `GOPATH` should point to the parent directory of this repository.
+3. Update the necessary environment variables, `GOPATH`, `CCPROOT`, and `CCP_NAMESPACE`. The `CCPROOT` should point to a parent directory of this repository with the repository directory for `crunchy-containers`. You may also need to download [expenv](https://github.com/CrunchyData/crunchy-containers/blob/ca30af7c7a38c68825462b8e96f4d6a44445bbdb/hugo/content/installation-guide/installation-guide.md#clone-github-repository).
 
 4. Source the environment file:
 ```
@@ -31,7 +31,7 @@ oc project myproject
 
 6. Create `pgpool.conf` file with `create_pgpool_conf.sh` script:
 ```
-./create_pool_passwd.sh SECRET_NAME HOSTNAME_KEY
+./create_pool_passwd.sh SECRET_NAME HOSTNAME_KEY USERNAME_KEY PASSWORD_KEY
 ```
 This will create the `pgpool.conf` file in the `kube/pgpool/configs/` directory.
 
