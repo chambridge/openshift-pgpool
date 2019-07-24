@@ -31,7 +31,7 @@ oc project myproject
 
 6. Create `pgpool.conf` file with `create_pgpool_conf.sh` script:
 ```
-./create_pool_passwd.sh SECRET_NAME HOSTNAME_KEY USERNAME_KEY PASSWORD_KEY
+./create_pgpool_conf.sh SECRET_NAME HOSTNAME_KEY USERNAME_KEY PASSWORD_KEY
 ```
 This will create the `pgpool.conf` file in the `kube/pgpool/configs/` directory.
 
